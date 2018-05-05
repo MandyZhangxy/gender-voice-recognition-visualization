@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Visualization (Sandbox)</title>
+	<title>Visualization (Prerequisites)</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
@@ -17,30 +17,38 @@
 			<div id="menubar">
 				<ul id="menu">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="objectives.html">Objectives</a></li>
-					<li><a href="prerequisites.html">Prerequisites</a></li>
-					<li><a href="projects.html">Projects</a></li>
+					<li><a href="eda.html">EDA</a></li>
+					<li class="selected"><a href="models.html">Models</a></li>
+					<li><a href="conclusion.html">Conclusion</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li class="selected"><a href="sandbox.html">Sandbox</a></li>
 				</ul><!-- menu -->
 			</div><!-- menubar -->
 		</div><!-- header -->
 		<div id="site_content">
 			<div class="sidebar">
 				<!-- insert your sidebar items here -->
-				<h3>Play Here</h3>
-				<h4>Try Out Stuff</h4>
-				<h5>Space For Playing</h5>
+				<h3>Participation</h3>
+				<h4>Attendance</h4>
+				<h5>Attendance Is Mandatory</h5>
 				<p>
-					Try out different things on this page with
-					HTML, CSS, and JavaScript.
+					Students are expected to attend each class,
+					to complete any required preparatory work and to
+					participate actively in lectures, discussions, and
+					exercises.
 					<br /><a href="#">Read more</a>
 				</p>
 				<p></p>
-				<h4>Experiment</h4>
-				<h5>Best Way To Learn</h5>
+				<h4>Emailing The Instructor</h4>
+				<h5>Email Etiquette</h5>
 				<p>
-					Experiment; you can't break anything.
+					In the age of technology, when most forms of communication are electronic, it is 
+					important to adopt a proper etiquette to communicate with one another. It is asked that 
+					students use salutation when sending emails to their instructors and also make sure to 
+					SIGN their name and include their class/section at the end of the email. The instructor 
+					reserves the right NOT to reply to emails that are not properly addressed or do not have a 
+					signature. Students should also use their GWU email for any correspondence with the 
+					instructors. Students are required to check their emails daily and especially the morning 
+					before class
 					<br /><a href="#">Read more</a>
 				</p>
 				<h3>Useful Links</h3>
@@ -54,11 +62,22 @@
 			</div><!-- sidebar -->
 			<div id="content">
 				<!-- insert page content here -->
-				<h1>Sandbox</h1>
-				<img id="mainImage" src="style/image01.jpg" 
-				      width="400" height="300" />
-				<!-- <script src="scripts/sample.js"></script> -->
-				<script src="scripts/script.js"></script>
+				<h1>1. Set training and testing</h1>
+				<ul>
+						<li>Randomly select 70% train and 30% test groups</li>
+						<li>After feature selections, we will only include selected features in training and testing.</li>
+				</ul>
+
+				<h2>2. Feature selection</h2>
+				<ul>
+						<li>Using Random Forest Gini Importance to select features</li>
+						<li>According to plot below, I select top 7 important features</li>
+
+				</ul>
+				
+								
+	
+				
 			</div><!-- content -->
 		</div><!-- site_content -->
 		<div id="content_footer">
@@ -74,7 +93,6 @@
 			</div><!-- footer -->
 		</div><!-- content_footer -->
 	</div><!-- main (this is a comment tag) -->
-	
 </body>
 
 </html>
