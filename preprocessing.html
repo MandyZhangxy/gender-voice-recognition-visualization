@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<title>Visualization (Prerequisites)</title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>	
+	<script type="text/javascript" src="./scripts/visualization_pre.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
@@ -42,17 +44,12 @@
 						<li>Randomly select 70% train and 30% test groups</li>
 						<li>After feature selections, we will only include selected features in training and testing.</li>
 				</ul>
-
 				<h2>2. Feature selection</h2>
 				<ul>
 						<li>Using Random Forest Gini Importance to select features</li>
 						<li>According to plot below, I select top 7 important features</li>
-
 				</ul>
-				
-								
-	
-				
+				<div id="feature_importance"></div>
 			</div><!-- content -->
 		</div><!-- site_content -->
 		<div id="content_footer">

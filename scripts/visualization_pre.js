@@ -1,23 +1,7 @@
 google.charts.load('current',{'packages':['corechart']});
 google.charts.setOnLoadCallback(drawAllSheets);
 function drawAllSheets(){
-    drawSheetName('mean_freq_vs_mod_indx', 'SELECT A,B,C', mean_freq_vs_mod_index);
-    // drawSheetName('edu_percentage_of_GDP', 'SELECT B,D,E,F,G,H,I',
-    //     edu_percentageofGDPResponseHandler);
-    // drawSheetName("health_percapita", "SELECT B,K",
-    //     mean_health_percapitaResponseHandler);
-    // drawSheetName("edu_percapita", "SELECT B,H",
-    //     mean_edu_percapitaResponseHandler);
-    // drawSheetName("health_percapita", "SELECT B,G,AF,Z",
-    //     percapita_in_2012_ResponseHandler);
-    // drawSheetName("health_percapita", "SELECT B,H,AG,AA",
-    //     percapita_in_2013_ResponseHandler);
-    // drawSheetName("health_percapita", "SELECT B,I,AG,AB",
-    //     percapita_in_2014_ResponseHandler);
-    // drawSheetName("health_percapita", "SELECT B,D, N",
-    //     health_military_ResponseHandler);
-    // drawSheetName("percapita_pivoted", "SELECT C,D,E,F,G,H,I,J,K,L,O,P,Q,R,S,T,U,V,W,X",
-    //     health_military_line_ResponseHandler);
+    drawSheetName('Gini_importance', 'SELECT A,B', gini_improtance);
 }
 
 function checkError(response) {
@@ -36,6 +20,19 @@ function drawSheetName(sheetName, query, responseHandler) {
     query.send(responseHandler);
 } //drawSheetName
 
+function gini_improtance(response) {
+    checkError(response);
+    var data = response.getDataTable();
+    var options = {
+        title: "Importance of Features",
+        height: 400,
+        legend: "none",
+        vAxis: {title: "Gini Importance"},
+        hAxis: {title: "Feature Names"}
+    }
+    var chart = new google.visualization.ColumnChart(document.getElementById("feature_importance"))
+    chart.draw(data, options);
+}
 function mean_freq_vs_mod_index(response) {
     checkError(response);
     var data = response.getDataTable();
