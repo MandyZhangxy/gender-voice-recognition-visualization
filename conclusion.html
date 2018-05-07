@@ -18,6 +18,7 @@
 				<ul id="menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="eda.html">EDA</a></li>
+					<li><a href="preprocessing.html">Data Preprocessing</a></li>
 					<li><a href="models.html">Models</a></li>
 					<li class="selected"><a href="conclusion.html">Conclusion</a></li>
 					<li><a href="contact.html">Contact</a></li>
@@ -27,58 +28,33 @@
 		<div id="site_content">
 			<div class="sidebar">
 				<!-- insert your sidebar items here -->
-				<h3>Instructor</h3>
-				<h4>Nima Zahadat, Ph.D.</h4>
-				<h5>nzahadat@gwu.edu</h5>
-				<p>
-					I will be your instructor for this course.
-					Please read Blackboard and your Syllabus carefully.
-					<br /><a href="#">Read more</a>
-				</p>
-				<p></p>
-				<h4>Office</h4>
-				<h5>2100 Pennsylvania Ave #283<br />Washington, DC</h5>
-				<p>
-					Office hours are by appointment.
-					<br /><a href="#">Read more</a>
-				</p>
+				
 				<h3>Useful Links</h3>
 				<ul>
 					<li><a href="https://developers.google.com/chart/interactive/docs/gallery">Google Gallery</a></li>
-					<li><a href="https://www.data.gov/">Government Datasets</a></li>
-					<li><a href="http://www.gapminder.org/">Gap Minder Visuals</a></li>
-					<li><a href="https://www.kaggle.com/">Kaggle Datasets</a></li>
-					<li><a href="https://www.plot.ly/">Plotly</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K Nearest Neighbors</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Random_forest">Random Forest</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic Regrssion</a></li>
+					
 				</ul>
 			</div><!-- sidebar -->
 			<div id="content">
 				<!-- insert page content here -->
-				<h1>Welcome to Visualization of Complex Data</h1>
-				<p>
-					Today vast amounts of raw and refined information can be supplied and accessed to 
-					support analysis and decisions. Indeed, information access and retrieval is 
-					considered less a problem and at times a burden. The most pressing need now is to 
-					be able to present the information in a
-					manner that is usable. This requires that 
-					cogent information be provided in context. To the maximum extent possible the 
-					information must be display in an intuitive manner that supports not only analytical 
-					but cognitive processes. (Source: Taylor Connor As sociates LLC, all rights reserved) 
-				</p>
-				<p>
-					To support this burgeoning technology requirement designers and developers of 
-					information systems need to be current not only with the technology but the unique 
-					aspects of information visualization design. This course is
-					intended to develop an awareness of the design issues; an understanding of the underlying technology; 
-					introduce students to currently available technology; guide students in design 
-					protocols; and examine typical applications of those technologies. 
-				</p>
-				<h2>Browser Compatibility</h2>
-				<p>This site has been tested in the following browsers:</p>
+				<h1>Conlusion</h1>
 				<ul>
-					<li>Safari</li>
-					<li>Firefox</li>
-					<li>Chrome</li>
+					<li>The accuracy rates of all three models are over 97%, all the models performed well on prediction. Among these three, the random forest classification is the best, since its accuracy reaches 98.11%. Therefore,  random forest best model for gender recognition.</li>
+
+					<li>The reason why all models have such high accuracy is that the input dataset is perfectly balanced and has no missing values. If our dataset is imbalanced or has many missing values, we need to rebalance the data and also do the imputation, which will decrease the performance of madels. </li>
+						
+					<li>Gender can be recognized by voice. We did three recognitions in demo. For the first trial, the person spoke too short, and there were some speaker' noise during recording, the result was false. The rest of two were correct.</li> 
+						
+					<li>After finishing the major parts of the project, we are still curious that what we can do next to make our machine smarter. What if people disguise their voice? What if we add some feigned voices into the dataset? Can this machine still do a good job? </li>
+						
+					<li>For feature selection, there might be some better algorithms to perform dimention reduction such as principal component analysis (PCA) or independent component analysis (ICA). </li>
+						
+					<li>In validation process, we only randomly select test for one time. It's more appropriate if we did 10-fold cross validation. Then, the accuracy rate will be more 'accurate'. </li>
 				</ul>
+			
 			</div><!-- content -->
 		</div><!-- site_content -->
 		<div id="content_footer">

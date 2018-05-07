@@ -18,6 +18,7 @@
 				<ul id="menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="eda.html">EDA</a></li>
+					<li><a href="preprocessing.html">Data Preprocessing</a></li>
 					<li class="selected"><a href="models.html">Models</a></li>
 					<li><a href="conclusion.html">Conclusion</a></li>
 					<li><a href="contact.html">Contact</a></li>
@@ -27,67 +28,53 @@
 		<div id="site_content">
 			<div class="sidebar">
 				<!-- insert your sidebar items here -->
-				<h3>Participation</h3>
-				<h4>Attendance</h4>
-				<h5>Attendance Is Mandatory</h5>
-				<p>
-					Students are expected to attend each class,
-					to complete any required preparatory work and to
-					participate actively in lectures, discussions, and
-					exercises.
-					<br /><a href="#">Read more</a>
-				</p>
-				<p></p>
-				<h4>Emailing The Instructor</h4>
-				<h5>Email Etiquette</h5>
-				<p>
-					In the age of technology, when most forms of communication are electronic, it is 
-					important to adopt a proper etiquette to communicate with one another. It is asked that 
-					students use salutation when sending emails to their instructors and also make sure to 
-					SIGN their name and include their class/section at the end of the email. The instructor 
-					reserves the right NOT to reply to emails that are not properly addressed or do not have a 
-					signature. Students should also use their GWU email for any correspondence with the 
-					instructors. Students are required to check their emails daily and especially the morning 
-					before class
-					<br /><a href="#">Read more</a>
-				</p>
+				
 				<h3>Useful Links</h3>
 				<ul>
-					<li><a href="https://developers.google.com/chart/interactive/docs/gallery">Google Gallery</a></li>
-					<li><a href="https://www.data.gov/">Government Datasets</a></li>
-					<li><a href="http://www.gapminder.org/">Gap Minder Visuals</a></li>
-					<li><a href="https://www.kaggle.com/">Kaggle Datasets</a></li>
-					<li><a href="https://www.plot.ly/">Plotly</a></li>
+						<li><a href="https://developers.google.com/chart/interactive/docs/gallery">Google Gallery</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K Nearest Neighbors</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Random_forest">Random Forest</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic Regrssion</a></li>
 				</ul>
 			</div><!-- sidebar -->
 			<div id="content">
 				<!-- insert page content here -->
-				<h1>Prerequisites and Outcome</h1>
-				<p>
-					You are expected to have a basic knowledge of statistics (e.g., at the level of STAT 2118 
-					Regression Methods that covers analysis of research data through simple and multiple regression and correlation). The course prerequisite is DATS 6101 or permission of the 
-					instructor.				
-				</p>
-				<p>
-					Visualization is an art as well as a science.  It also requires professional presentation 
-					abilities.  Consider two websites that have the same content, one that is plain and 
-					one that is beautiful to look at and find information on quickly.  That is an example of visualization.  In this course, you will learn:
-				</p>
+				<h1>Three classification models were considered for gender recognition:</h1>
+				<h4>
+					<li>Random Forest</li>
+					<li>K-Nearest Neighbour</li>
+					<li>Logistic Regression</li>
+				</h4>
+				<h2>1. Random Forest</h2>
 				<ul>
-					<li>Researching and finding raw data</li>
-					<li>Understanding what information visualization is and what it is not</li>
-					<li>Learning to use Google API visualization tools</li>
-					<li>Learning   to    use    Google    document    tools    in    conjunction    with visualization tools</li>
-					<li>Learning Tableau</li>
-					<li>Learning  to  use  Excel  as  a  practical  tool  for  data  formatting  and 
-visualization</li>
-					<li>Learning   to   setup   and   use   a   portable   web   server   to   host   your 
-visualizations on any computer</li>
-					<li>Publishing your visualization on the web</li>
-					<li>Learning to create beautiful presentations to go along with visualization</li>
-					<li>Learning to use audio/video tools to create video presentations</li>
-					<li>Research and learn additional visualization tools</li>
+						<li>Set parameters for random forest model</li>
+						<li>Plot the ROC/AUC and confusion matrix</li>
 				</ul>
+				<p>Based on the confusion matrix, there are 468 samples are predicted correctly as females; however, there are 10 samples predicted as males but are actually females. There are 465 samples that are predicted correctly as males; however, there are 8 samples that are predicted as female but are in fact male.
+
+						Based on the elbow method, we find that the first segment of line in AUC is almost parallel to the y-axis and the angel of the left corner is nearly 90 degree, which means that the area under curve is close 100, and also means that this is a good model. 
+						
+						The accuracy rate is 98.11% and it is in the 95% confidence interval with the p-value far smaller than 0.05. Therefore, it can be concluded that this accuracy is statistically significant. </p>
+
+				<h2>2. K-Nearest Neighbour</h2>
+				<ul>
+						<li>Set parameter k = 7. When k=7, compared to other k values, the accuracy reach the highest</li>
+						<li>Plot the ROC/AUC and confusion matrix</li>
+				</ul>
+				<p>Based on the confusion matrix, there are 461 samples are predicted correctly as females; however, there are 17 samples predicted as males but are actually females. There are 466 samples that are predicted correctly as males; however, there are 7 samples that are predicted as female but are in fact male.
+
+						The accuracy is 97.48% and is in the 95% confidence interval with the p-value far smaller than 0.05. Therefore, we can say that this accuracy is statistically significant. </p>
+
+				<h2>3. Logistic Regression</h2>
+		
+
+
+				<p>
+						Based on the confusion matrix, there are 464 samples that are predicted correctly as females; however, there are 14 samples that are predicted as males but are actually females. There are 464 samples that are predicted correctly as males; however, there are 9 samples are predicted as females but are in fact males.
+
+						The accuracy is 97.58% and is in the 95% confidence interval with the p-value far smaller than 0.05. Therefore, this accuracy is statistically significant. 
+				</p>
+			
 			</div><!-- content -->
 		</div><!-- site_content -->
 		<div id="content_footer">
