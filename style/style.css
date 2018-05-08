@@ -5,7 +5,7 @@ html{height: 100%;}
 
 body {
 	font: normal .78em arial, sans-serif;
-	background: #444;
+	background: #2B4251;
 	color: #555;
 }
 
@@ -50,7 +50,7 @@ blockquote
 	margin: 20px 0 20px 0;
 	padding: 10px 20px 0 20px;
 	border: 1px solid #E5E5DB;
-	background: #F5F5F1;
+	background: rgb(230, 230, 194);
 }
 
 ul {margin: 2px 0 22px 17px;}
@@ -160,7 +160,7 @@ ul#menu li.selected a {
 
 ul#menu li.selected {
 	margin: 7px 0 0 0;
-	background: #F8F8F8;
+	background: rgb(240, 243, 242);
 }
 
 ul#menu li a:hover {
@@ -170,7 +170,7 @@ ul#menu li a:hover {
 #site_content {
 	width: 890px;
 	overflow: hidden;
-	background: #F8F8F8;
+	background: rgb(240, 243, 242);
 }
 
 .sidebar {
