@@ -61,6 +61,10 @@ ul li {
 	padding: 0 0 4px 5px;
 }
 
+#list_of_features {
+	columns: 2
+}
+
 ol {
 	margin: 8px 0 22px 20px;
 }
