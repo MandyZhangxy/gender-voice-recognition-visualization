@@ -37,18 +37,3 @@ function mean_freq_vs_mod_index(response) {
     chart.draw(data, options);
 }
 
-function health_percentageofGDPResponseHandler(response) {
-    checkError(response);
-    var data = response.getDataTable();
-    data.sort({column: 5, desc:true});
-    
-    var options = {
-        height: 400,
-        vAxis: {title: 'Health Expenditure (%of GDP)'},
-        colors: ["#94d9ce", "#f9f9ed", "#f6caa6", "7B498D","#f0afa7", "#f8666b"]
-    };
-    
-    var chart = new google.visualization.ColumnChart(
-                document.getElementById('health_percentageofGDP_div'));
-    chart.draw(data, options);
-} //health_percentageofGDPResponseHandler
