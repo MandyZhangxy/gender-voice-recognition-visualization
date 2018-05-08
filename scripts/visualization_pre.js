@@ -28,7 +28,7 @@ function gini_improtance(response) {
         height: 400,
         legend: "none",
         vAxis: {title: "Gini Importance"},
-        hAxis: {title: "Feature Names"}
+        hAxis: {title: "Feature Names", showTextEvery: 1, slantedText: true, slantedTextAngle: 45}
     }
     var chart = new google.visualization.ColumnChart(document.getElementById("feature_importance"))
     chart.draw(data, options);
